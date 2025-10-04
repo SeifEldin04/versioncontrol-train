@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="w-full bg-white/70 backdrop-blur-md shadow-md fixed top-0 left-0 z-50">
@@ -8,9 +10,11 @@ export default function Navbar() {
         {/* Navigation Links */}
         <ul className="hidden md:flex gap-8 text-gray-700 font-medium">
           <li className="hover:text-blue-600 cursor-pointer transition">Home</li>
+          <li className="hover:text-blue-600 cursor-pointer transition">
+            <Link href={"contact"}>Contact</Link>
+          </li>
           <li className="hover:text-blue-600 cursor-pointer transition">About</li>
           <li className="hover:text-blue-600 cursor-pointer transition">Services</li>
-          <li className="hover:text-blue-600 cursor-pointer transition">Contact</li>
         </ul>
 
         {/* Button */}
